@@ -1,7 +1,7 @@
 # Arham Alloys
 
-![Build and Deploy](https://github.com/arham-alloys/website/workflows/Build%20and%20Deploy/badge.svg?branch=master)
-![Events](https://img.shields.io/github/issues/arham-alloys/website/event?color=green&label=events)
+[![Build and Deploy](https://github.com/arham-alloys/arham-alloys.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/arham-alloys/arham-alloys.github.io/actions/workflows/deploy.yml)
+![Events](https://img.shields.io/github/issues/arham-alloys/arham-alloys.github.io/event?color=green&label=events)
 
 ## 🚀 Super fast setup
 
