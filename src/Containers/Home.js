@@ -215,8 +215,8 @@ const Home = () => {
           <Col lg="6">
             {ChooseData.map((data) => (
               <Row className="my-3" data={data} key={data.head}>
-                <Col sm="3">
-                  <div className="d-flex justify-content-end">
+                <div className="col-4 col-lg-3">
+                  <div className="d-flex justify-content-lg-end">
                     <h1 className="font-weight-bold display-4 text-dark mb-0">
                       <CountUp
                         start={0}
@@ -228,18 +228,15 @@ const Home = () => {
                     <span className="text-success">+</span>
                   </div>
                   <p
-                    className="mb-0 text-uppercase text-secondary small text-right"
+                    className="mb-0 text-uppercase text-secondary small text-left text-lg-right"
                     style={{ letterSpacing: "1px" }}
                   >
                     {data.head}
                   </p>
-                </Col>
-                <Col
-                  sm="8"
-                  className="d-flex align-items-center border-left py-3 ml-3"
-                >
+                </div>
+                <div className="d-flex align-items-center border-left py-3 ml-0 ml-lg-3 col-8">
                   <p className="mb-0 pl-3 text-dark">{data.text}</p>
-                </Col>
+                </div>
               </Row>
             ))}
           </Col>

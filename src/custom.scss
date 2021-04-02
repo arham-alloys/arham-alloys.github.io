@@ -31,6 +31,12 @@ html {
   font-size: 0.8rem;
 }
 
+.justify-content-lg-end {
+  @media (min-width: 992px) {
+    justify-content: end;
+  }
+}
+
 .bg-md-translucent {
   @media (max-width: 991.98px) {
     background: rgba(255, 255, 255, 0.6);
