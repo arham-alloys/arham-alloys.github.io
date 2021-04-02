@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import TextLoop from "react-text-loop";
 import DataCard from "../Components/DataCard";
 import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Home = () => {
   const Section1CardsData = [
@@ -223,7 +224,14 @@ const Home = () => {
                         end={data.count}
                         decimals={data.decimals}
                         suffix={data.counthelp}
-                      />
+                        redraw={true}
+                      >
+                        {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                            <span ref={countUpRef} />
+                          </VisibilitySensor>
+                        )}
+                      </CountUp>
                     </h1>{" "}
                     <span className="text-success">+</span>
                   </div>
