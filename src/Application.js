@@ -7,7 +7,7 @@ import Home from "./Containers/Home";
 // import Contact from "./Containers/Contact";
 // import EventPost from "./Containers/EventPost";
 import NavBar from "./Components/NavBar";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import styled from "styled-components";
 
 var createBrowserHistory = require("history").createBrowserHistory;
@@ -22,7 +22,7 @@ const Application = () => {
         <Route path="/" component={Home} />
         {/* <Route exact path="/about" component={About} /> */}
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </DefaultRouter>
   );
 };
