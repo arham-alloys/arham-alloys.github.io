@@ -1,16 +1,67 @@
 import React from "react";
-
+import { mdiCards, mdiRecycle, mdiTruck } from "@mdi/js";
 import { text } from "../text";
 import { Button, Container, Col, Row } from "reactstrap";
 import styled from "styled-components";
 import heroImg from "../img/hero-img-2.png";
-import aboutImg from "../img/about.png";
+import heroImg2 from "../img/hero-img-3.png";
+import pipe_yellow from "../img/scrap/pipe-yellow.png";
+import pipe_red from "../img/scrap/pipe-red.png";
+import nut1_red from "../img/scrap/nut1-red.png";
+import bolt_yellow from "../img/scrap/bolt-yellow.png";
+import bolt_red from "../img/scrap/bolt-red.png";
 import { Link } from "react-router-dom";
 import TextLoop from "react-text-loop";
+import DataCard from "../Components/DataCard";
 
 const Home = () => {
+  const Section1CardsData = [
+    { head: "Get Scrap!", icon: mdiTruck, text: "We Search and Collect Scrap" },
+    {
+      head: "Segregate Scrap!",
+      icon: mdiCards,
+      text: "We Segregate Scrap Inhouse",
+    },
+    {
+      head: "Recycle Scrap!",
+      icon: mdiRecycle,
+      text: "We Recycle and Ship the Scrap",
+    },
+  ];
+
   return (
     <>
+      <FloatingScrap1
+        src={pipe_yellow}
+        height="70px"
+        style={{ top: "14%", left: "3%" }}
+        alt=""
+      />
+      <FloatingScrap2
+        src={bolt_red}
+        height="20px"
+        style={{ top: "35%", left: "7%" }}
+        alt=""
+      />
+      <FloatingScrap2
+        src={nut1_red}
+        height="30px"
+        style={{ top: "90%", left: "53%" }}
+        alt=""
+      />
+      <FloatingScrap3
+        src={bolt_yellow}
+        height="20px"
+        style={{ top: "80%", left: "60%" }}
+        alt=""
+      />
+      <FloatingScrap3
+        src={pipe_red}
+        height="40px"
+        className="d-none d-md-block"
+        style={{ top: "87%", left: "20%" }}
+        alt=""
+      />
       <LandingHome>
         <Container fluid className="h-100 d-flex align-items-center">
           <Row className="w-100">
@@ -18,32 +69,44 @@ const Home = () => {
               <h5 className="text-uppercase text-success font-weight-bold mb-1">
                 Welcome
               </h5>
-              <h1 className="text-dark display-3 font-weight-bold mb-0">
-                We Deal with
-              </h1>
-              <h1
-                className="text-dark display-3 font-weight-bold mb-0"
-                style={{ marginTop: "-1.5rem" }}
-              >
-                <TextLoop
-                  interval={2000}
-                  children={["Non-Ferrous", "Aluminium", "Iron", "Copper"]}
-                />
-              </h1>
-              <h1
-                className="text-dark display-3 font-weight-bold mb-0"
-                style={{ marginTop: "-1.5rem" }}
-              >
-                Scrap
-              </h1>
+              <div className="d-none d-lg-block">
+                <h1 className="text-dark display-3 font-weight-bold mb-0">
+                  We Deal with
+                </h1>
+                <h1
+                  className="text-dark display-3 font-weight-bold mb-0"
+                  style={{ marginTop: "-1.5rem" }}
+                >
+                  <TextLoop
+                    interval={2000}
+                    children={[
+                      "Non-Ferrous",
+                      "Aluminium",
+                      "Stainless Steel",
+                      "Copper",
+                    ]}
+                  />
+                </h1>
+                <h1
+                  className="text-dark display-3 font-weight-bold mb-0"
+                  style={{ marginTop: "-1.5rem" }}
+                >
+                  Scrap
+                </h1>
+              </div>
+              <div className="d-block d-lg-none">
+                <h1 className="text-dark font-weight-bold mb-0">
+                  We Deal with Non-Ferrous Scrap
+                </h1>
+              </div>
               <p className="mt-3 pr-0 mb-5 pr-lg-5 text-info">
                 We segregate the material at our state-of-the-art processing
                 house situated at our newly built unit situated at Faridabad.
               </p>
-              <div>
+              <Row className="pl-3">
                 <Link to="/contact">
                   <Button
-                    className="px-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
+                    className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
                     size="lg"
                     style={{ fontSize: "15px" }}
                   >
@@ -52,46 +115,34 @@ const Home = () => {
                 </Link>
                 <Link to="/contact">
                   <Button
-                    className="px-5 py-3 small ml-3 bg-gradient-secondary border-0 rounded text-uppercase font-weight-light"
+                    className="col col-lg-auto px-lg-5 py-3 small ml-3 bg-gradient-secondary border-0 rounded text-uppercase font-weight-light"
                     size="lg"
                     style={{ fontSize: "15px" }}
                   >
                     Contact Us
                   </Button>
                 </Link>
-              </div>
+              </Row>
             </Col>
           </Row>
         </Container>
       </LandingHome>
-      <div style={{ background: "#f8fcff", padding: "100px 0" }}>
+      <LandingSection1 style={{ padding: "150px 0 0 0" }}>
         <Container fluid>
-          <Row>
-            <Col
-              className="d-flex justify-content-center flex-column"
-              sm="12"
-              lg={{ offset: 1, size: 5 }}
-            >
-              <h5 className="text-success font-weight-bold mb-3">
-                {text.about.title}
-              </h5>
-              <h1 className="text-primary font-weight-bold mb-4">
-                {text.about.head}
-              </h1>
-              <p className="text-secondary">{text.about.text1}</p>
-              <p className="text-secondary">{text.about.text2}</p>
-              <Link to="/about">
-                <Button className="rounded-0 px-4" color="success" size="lg">
-                  About Us
-                </Button>
-              </Link>
-            </Col>
-            <Col className="text-center mt-4 mt-lg-0" sm="12" lg="5">
-              <AboutImg src={aboutImg} alt="" />
-            </Col>
+          <h5 className="text-uppercase text-success text-center font-weight-bold mb-1">
+            What we do
+          </h5>
+          <h1 className="text-dark text-center font-weight-bold mb-1">
+            Segregate Material At <br className="d-none d-lg-block" />{" "}
+            State-of-The-Art Processing House
+          </h1>
+          <Row className="d-flex align-items-center justify-content-center pt-3 px-3 data-card-container">
+            {Section1CardsData.map((data, index) => (
+              <DataCard data={data} key={data.head} index={index} />
+            ))}
           </Row>
         </Container>
-      </div>
+      </LandingSection1>
       <div style={{ padding: "100px 0" }}>
         <Container fluid>
           <Row>
@@ -128,12 +179,96 @@ const LandingHome = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  @media (max-width: 991.98px) {
+    background-size: unset;
+    background-position: left;
+  }
+`;
+const LandingSection1 = styled.div`
+  height: 100vh;
+  background-image: url(${heroImg2});
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @media (max-width: 991.98px) {
+    background-size: unset;
+    background-position: left;
+  }
 `;
 
-const AboutImg = styled.img`
-  @media (max-width: 991.98px) {
-    width: 100%;
+const FloatingScrap1 = styled.img`
+  @keyframes rotate1 {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(25px, 25px) rotate(90deg);
+    }
+    50% {
+      transform: translate(0px, 50px) rotate(180deg);
+    }
+    75% {
+      transform: translate(-25px, 25px) rotate(270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
   }
+
+  position: absolute;
+  z-index: 0;
+  animation: rotate1 15s infinite;
+  animation-timing-function: ease-in-out;
+`;
+
+const FloatingScrap2 = styled.img`
+  @keyframes rotate2 {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(35px, 35px) rotate(-90deg);
+    }
+    50% {
+      transform: translate(0px, 70px) rotate(-180deg);
+    }
+    75% {
+      transform: translate(-35px, 35px) rotate(-270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(-360deg);
+    }
+  }
+
+  position: absolute;
+  z-index: 0;
+  animation: rotate2 15s infinite;
+  animation-timing-function: ease-in-out;
+`;
+
+const FloatingScrap3 = styled.img`
+  @keyframes rotate3 {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-30px, 30px) rotate(90deg);
+    }
+    50% {
+      transform: translate(0px, 60px) rotate(180deg);
+    }
+    75% {
+      transform: translate(30px, 30px) rotate(270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+  }
+
+  position: absolute;
+  z-index: 0;
+  animation: rotate3 15s infinite;
+  animation-timing-function: ease-in-out;
 `;
 
 export default Home;

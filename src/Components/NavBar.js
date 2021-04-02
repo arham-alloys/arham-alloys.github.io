@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Collapse, Navbar, Nav, NavItem, Button } from "reactstrap";
 import { Link } from "react-router-dom";
-import logo from "../img/logo-circle-text.jpeg";
+import logo from "../img/logo-circle-text.png";
 import styled from "styled-components";
 import { mdiMenu, mdiClose } from "@mdi/js";
 import Icon from "@mdi/react";

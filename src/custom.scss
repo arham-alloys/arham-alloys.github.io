@@ -15,6 +15,12 @@ $btn-focus-box-shadow: none !important;
   transition-duration: 300ms;
 }
 
+.w-md-45 {
+  @media (max-width: 991.98px) {
+    width: 45%;
+  }
+}
+
 body,
 html {
   font-family: 'Mulish', sans-serif;
@@ -125,4 +131,85 @@ input:-webkit-autofill {
   background: -webkit-linear-gradient(90deg, rgba(96, 87, 150, 1) 0%, rgba(59, 43, 152, 1) 100%);
   background: linear-gradient(90deg, rgba(96, 87, 150, 1) 0%, rgba(59, 43, 152, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#605796", endColorstr="#3b2b98", GradientType=1);
+}
+
+.data-card-body {
+  background: #f8f9fa;
+
+  &:hover {
+    background: #3b3663;
+  }
+}
+
+.data-card-title {
+  color: #3b3663;
+}
+
+.data-card-body:hover .data-card-title {
+  color: #f8f9fa;
+}
+
+.data-card-icon0 {
+  background-image: url('./img/patch_bg0.png');
+}
+
+.data-card-icon1 {
+  background-image: url('./img/patch_bg1.png');
+}
+
+.data-card-icon2 {
+  background-image: url('./img/patch_bg2.png');
+}
+
+.data-card-icon {
+  position: relative;
+  color: black;
+  transition-duration: 10ms;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+
+.data-card-body:hover .data-card-icon {
+
+  @keyframes spin {
+    from {
+      left: 0;
+      transform: translateX(0) rotate(0deg);
+    }
+
+    to {
+      left: 100%;
+      transform: translateX(-100%) rotate(360deg);
+    }
+  }
+
+  color: #f8f9fa;
+  animation: spin 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+.data-card-seperator {
+  height: 1px;
+  background-color: #3b3663;
+  width: 35%;
+  border: none;
+  margin: 15px 0 25px 0;
+}
+
+.data-card-body:hover .data-card-seperator {
+  background-color: #f8f9fa;
+
+}
+
+
+.data-card-text {
+  color: #3B2B98
+}
+
+
+.data-card-body:hover .data-card-text {
+  color: #f8f9fa;
 }
