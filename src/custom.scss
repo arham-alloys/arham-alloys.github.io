@@ -1,11 +1,11 @@
-$primary: #072366;
+$primary: #FFCC00;
 $secondary: #6c757d;
-$success: #09cc7f;
-$info: #1696e7;
+$success: #E3010F;
+$info: #3B2B98;
 $warning: #ffc107;
 $danger: #ec5b53;
 $light: #f8f9fa;
-$dark: #464d65;
+$dark: #3B3663;
 $btn-focus-box-shadow: none !important;
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
@@ -109,4 +109,20 @@ input:-webkit-autofill {
 
 .hidden.hide {
   opacity: 0;
+}
+
+.bg-gradient-primary {
+  background: rgb(255, 193, 7);
+  background: -moz-linear-gradient(90deg, rgba(255, 193, 7, 1) 0%, rgba(227, 1, 15, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 193, 7, 1) 0%, rgba(227, 1, 15, 1) 100%);
+  background: linear-gradient(90deg, rgba(255, 193, 7, 1) 0%, rgba(227, 1, 15, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc107", endColorstr="#e3010f", GradientType=1);
+}
+
+.bg-gradient-secondary {
+  background: rgb(96, 87, 150);
+  background: -moz-linear-gradient(90deg, rgba(96, 87, 150, 1) 0%, rgba(59, 43, 152, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(96, 87, 150, 1) 0%, rgba(59, 43, 152, 1) 100%);
+  background: linear-gradient(90deg, rgba(96, 87, 150, 1) 0%, rgba(59, 43, 152, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#605796", endColorstr="#3b2b98", GradientType=1);
 }

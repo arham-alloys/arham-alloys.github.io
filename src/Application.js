@@ -1,26 +1,34 @@
-import React from 'react'
-import { ApolloProvider } from '@apollo/react-hooks';
-import { Helmet } from "react-helmet";
+import React from "react";
+import { HashRouter as DefaultRouter, Switch, Route } from "react-router-dom";
 
-import { config } from './config'
-import { client } from './Utils/apollo';
-import Router from './Router';
+import Home from "./Containers/Home";
+// import About from "./Containers/About";
+// import Events from "./Containers/Events";
+// import Contact from "./Containers/Contact";
+// import EventPost from "./Containers/EventPost";
+import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
+import styled from "styled-components";
+
+var createBrowserHistory = require("history").createBrowserHistory;
+const history = createBrowserHistory();
 
 const Application = () => {
-
   return (
-    <>
-      <Helmet>
-        <title>{config.title}</title>
-        <meta charSet="utf-8" />
-        <meta name="description" content={config.description} />
-        <meta name="theme-color" content="#09cc7f" />
-      </Helmet>
-      <ApolloProvider client={client}>
-        <Router />
-      </ApolloProvider>
-    </>
-  )
+    <DefaultRouter history={history}>
+      <NavBar />
+      <NavPadding />
+      <Switch>
+        <Route path="/" component={Home} />
+        {/* <Route exact path="/about" component={About} /> */}
+      </Switch>
+      <Footer />
+    </DefaultRouter>
+  );
 };
+
+const NavPadding = styled.div`
+  min-height: 40px;
+`;
 
 export default Application;
