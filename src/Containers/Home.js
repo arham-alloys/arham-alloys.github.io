@@ -378,7 +378,7 @@ const Home = () => {
                   height="10px"
                   rect
                   fontColor="#8e979f"
-                  percentage={data.count}
+                  percentage={`${data.count}`}
                   rectBorderRadius="30px"
                   trackPathColor="#8e979f"
                   defColor={{
