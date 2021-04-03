@@ -21,7 +21,9 @@ const Footer = () => {
           </p>
         </Col>
         <Col sm="12" lg="3">
-          <h5 className="text-dark font-weight-bold mb-1">Products</h5>
+          <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
+            Products
+          </h5>
           <ListGroup className="no-list">
             <li>
               <Link to="#" className="text-secondary">
@@ -46,7 +48,9 @@ const Footer = () => {
           </ListGroup>
         </Col>
         <Col sm="12" lg="3">
-          <h5 className="text-dark font-weight-bold mb-1">Contact</h5>
+          <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
+            Contact
+          </h5>
           <ListGroup className="no-list">
             <li>
               Address: Some cool adress here,
@@ -57,7 +61,9 @@ const Footer = () => {
           </ListGroup>
         </Col>
         <Col sm="12" lg="3">
-          <h5 className="text-dark font-weight-bold mb-1">Quick Links</h5>
+          <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
+            Quick Links
+          </h5>
           <ListGroup className="no-list">
             <li>
               <Link to="#" className="text-secondary">
