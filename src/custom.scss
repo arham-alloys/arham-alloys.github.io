@@ -15,9 +15,25 @@ $btn-focus-box-shadow: none !important;
   transition-duration: 300ms;
 }
 
+::selection {
+  background-color: #D2E8C4;
+}
+
 .w-md-45 {
   @media (max-width: 991.98px) {
     width: 45%;
+  }
+}
+
+.w-lg-50 {
+  @media (min-width: 992px) {
+    width: 50% !important;
+  }
+}
+
+.w-lg-25 {
+  @media (min-width: 992px) {
+    width: 25% !important;
   }
 }
 

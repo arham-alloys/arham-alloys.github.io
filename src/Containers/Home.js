@@ -9,6 +9,9 @@ import {
 } from "@mdi/js";
 import { Button, Container, Col, Row } from "reactstrap";
 import styled from "styled-components";
+import partner1 from "../img/partners/jsl.png";
+import partner2 from "../img/partners/bir.svg";
+import partner3 from "../img/partners/mrai.png";
 import heroImg from "../img/hero-img-2.png";
 import heroImg2 from "../img/hero-img-3.png";
 import home_bars from "../img/home-bars.png";
@@ -135,6 +138,11 @@ const Home = () => {
                       "Aluminium",
                       "Stainless Steel",
                       "Copper",
+                      "Tungsten",
+                      "Nickel Alloys",
+                      "Tantalum",
+                      "Titanium",
+                      "Nickel",
                     ]}
                   />
                 </h1>
@@ -152,7 +160,9 @@ const Home = () => {
               </div>
               <p className="mt-3 pr-0 mb-5 pr-lg-5 text-info">
                 We segregate the material at our state-of-the-art processing
-                house situated at our newly built unit situated at Faridabad.
+                house situated at our newly built unit situated at Faridabad,
+                which includes 2 rotary sieves, a couple of vibrating sieves,
+                magnetic separators, and sorting stations.
               </p>
               <Row className="pl-3">
                 <Link to="/contact">
@@ -403,6 +413,32 @@ const Home = () => {
         </QualityRow>
       </Container>
       <Container>
+        <h5 className="text-uppercase text-success text-center font-weight-bold mb-1 mt-0 mt-lg-5">
+          Our Partners
+        </h5>
+        <h3 className="text-dark text-center font-weight-bold mb-1">
+          Some of Our Beloved Clients
+        </h3>
+        <Row className="my-4" style={{ opacity: "0.3" }}>
+          <Col className="d-flex align-items-center justify-content-center ">
+            <img src={partner1} alt="" className="img-fluid w-100 w-lg-50" />
+          </Col>
+          <Col className="d-flex align-items-center justify-content-center ">
+            <img src={partner3} alt="" className="img-fluid w-100 w-lg-25" />
+          </Col>
+          <Col className="d-flex align-items-center justify-content-center ">
+            <img src={partner2} alt="" className="img-fluid w-100 w-lg-50" />
+          </Col>
+        </Row>
+      </Container>
+      <Container>
+        <FloatingScrap1
+          src={pipe_yellow}
+          className="d-none d-lg-block"
+          height="40px"
+          style={{ top: "350%", right: "4%" }}
+          alt=""
+        />
         <Row>
           <div className="my-4 d-flex align-items-center col-6 col-lg-auto">
             <Icon
@@ -411,7 +447,7 @@ const Home = () => {
               className="text-info"
             />
             <p className="mb-0 ml-3">
-              +91 8745009643 <br /> email@gmail.com
+              +91 9650 485 980 <br /> info@arhamalloy.com
             </p>
           </div>
           <div className="my-2 my-lg-4 d-flex align-items-center col-6 col-lg-auto">
@@ -421,7 +457,8 @@ const Home = () => {
               className="text-info"
             />
             <p className="mb-0 ml-3">
-              Some cool address here, <br /> New Delhi - 110085
+              Plot No.159, Sohna Road, Sector-24, <br /> Faridabad, Haryana,
+              India-121005
             </p>
           </div>
           <Col sm="12" lg="" className="my-4">

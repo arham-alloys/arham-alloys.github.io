@@ -13,11 +13,10 @@ const Footer = () => {
             <img height="40px" src={logo} alt="" />
           </Link>
           <p className="mb-0 mt-3 text-secondary small">
-            The trio of Abhay Jain, Atul Jain, and Amit Jain first formed a
-            trading entity for non-ferrous metal scrap way back in 1999. Twelve
-            years later in 2010, armed with invaluable industry experience, they
-            ventured into manufacturing under the banner of Paras Steel
-            Industries.
+            Arham Alloy & Steel is the brainchild of true steel industry leaders
+            who have worked tirelessly to make a revered name in steel scrap
+            trading. Running under the banner of Paras Metal Agency for decades
+            it was rebranded as Arham Alloy & Steel Pvt Ltd.
           </p>
         </Col>
         <Col sm="12" lg="3">
@@ -53,11 +52,19 @@ const Footer = () => {
           </h5>
           <ListGroup className="no-list">
             <li>
-              Address: Some cool adress here,
-              <br /> Delhi - 110085
+              <b>Registered Address:</b> 9375/8, First Floor, Sadar Thana Road,
+              Multani Dhanda, Paharganj, New Delhi, India-110055
             </li>
-            <li>Phone: +91 8745009643</li>
-            <li>Email: email@gmail.com</li>
+            <li>
+              <b>Work Address:</b> Plot No.159, Sohna Road, Sector-24,
+              Faridabad, Haryana, India-121005
+            </li>
+            <li>
+              <b>Phone:</b> +91 9650 485 980
+            </li>
+            <li>
+              <b>Email:</b> info@arhamalloy.com
+            </li>
           </ListGroup>
         </Col>
         <Col sm="12" lg="3">
@@ -88,6 +95,11 @@ const Footer = () => {
             <li>
               <Link to="#" className="text-secondary">
                 Infrastructure
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="text-secondary">
+                Careers
               </Link>
             </li>
             <li>
