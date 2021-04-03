@@ -69,66 +69,6 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #072366 !important;
 }
 
-.form-control {
-  border-radius: 0;
-  border: none;
-  border-bottom: 3px solid rgba(7, 35, 102, 0.1);
-  background-color: transparent;
-}
-
-.form-control::placeholder {
-  color: transparent;
-}
-
-.form-group {
-  position: relative;
-}
-
-.form-control,
-.floating-label {
-  line-height: 1;
-  font: inherit;
-  padding: 1em;
-  padding-left: 0.5em;
-  height: 3em;
-}
-
-.floating-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  user-select: none;
-  z-index: 99;
-  transition: transform .25s, opacity .25s ease-in-out;
-  transform-origin: 0 0;
-  opacity: 0.9;
-  color: rgba(7, 35, 102, 0.9);
-}
-
-.form-control:focus,
-.form-control:not(:placeholder-shown) {
-  border-color: rgba(7, 35, 102, 0.3)
-}
-
-.form-control:focus+.floating-label,
-.form-control:not(:placeholder-shown)+.floating-label {
-  transform: translate(1%, -40%) scale(.8);
-  opacity: .7;
-}
-
-#messageContact {
-  resize: none;
-}
-
-.hidden {
-  opacity: 1;
-  transition: opacity 0.2s cubic-bezier(.17, .67, .69, .91);
-}
-
-.hidden.hide {
-  opacity: 0;
-}
-
 .bg-gradient-primary {
   background: rgb(255, 193, 7);
   background: -moz-linear-gradient(90deg, rgba(255, 193, 7, 1) 0%, rgba(227, 1, 15, 1) 100%);
@@ -224,4 +164,12 @@ input:-webkit-autofill {
 
 .data-card-body:hover .data-card-text {
   color: #f8f9fa;
+}
+
+.progress-bar {
+  background-color: transparent !important;
+}
+
+.progress-bar-rect-wrapper>div {
+  border-radius: 100px !important;
 }

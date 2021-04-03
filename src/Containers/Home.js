@@ -1,13 +1,22 @@
 import React from "react";
-import { mdiCards, mdiRecycle, mdiTruck } from "@mdi/js";
+import {
+  mdiArrowRight,
+  mdiCardAccountPhoneOutline,
+  mdiCards,
+  mdiMapMarkerRadiusOutline,
+  mdiRecycle,
+  mdiTruck,
+} from "@mdi/js";
 import { Button, Container, Col, Row } from "reactstrap";
 import styled from "styled-components";
 import heroImg from "../img/hero-img-2.png";
 import heroImg2 from "../img/hero-img-3.png";
+import home_bars from "../img/home-bars.png";
 import pipe_yellow from "../img/scrap/pipe-yellow.png";
 import pipe_red from "../img/scrap/pipe-red.png";
 import nut1_red from "../img/scrap/nut1-red.png";
 import nut2_yellow from "../img/scrap/nut2-yellow.png";
+import nut2_red from "../img/scrap/nut2-red.png";
 import bolt_yellow from "../img/scrap/bolt-yellow.png";
 import bolt_red from "../img/scrap/bolt-red.png";
 import { Link } from "react-router-dom";
@@ -15,6 +24,8 @@ import TextLoop from "react-text-loop";
 import DataCard from "../Components/DataCard";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+import Icon from "@mdi/react";
+import ProgressBar from "react-animated-progress-bar";
 
 const Home = () => {
   const Section1CardsData = [
@@ -52,15 +63,32 @@ const Home = () => {
     },
   ];
 
+  const StatData = [
+    {
+      head: "Stat 1",
+      count: 80,
+    },
+    {
+      head: "Stat 2",
+      count: 90,
+    },
+    {
+      head: "Stat 3",
+      count: 75,
+    },
+  ];
+
   return (
     <>
       <FloatingScrap1
         src={pipe_yellow}
         height="70px"
+        className="d-none d-lg-block"
         style={{ top: "14%", left: "3%" }}
         alt=""
       />
       <FloatingScrap2
+        className="d-none d-lg-block"
         src={bolt_red}
         height="20px"
         style={{ top: "35%", left: "7%" }}
@@ -150,7 +178,7 @@ const Home = () => {
           </Row>
         </Container>
       </LandingHome>
-      <LandingSection1 style={{ padding: "140px 0 120px 0" }}>
+      <LandingSection1>
         <FloatingScrap1
           src={pipe_yellow}
           height="40px"
@@ -186,7 +214,33 @@ const Home = () => {
         </Container>
       </LandingSection1>
       <Container>
-        <Row style={{ padding: "50px 0" }}>
+        <FloatingScrap2
+          src={nut1_red}
+          height="30px"
+          style={{ top: "250%", right: "10%" }}
+          alt=""
+        />
+        <FloatingScrap3
+          src={bolt_yellow}
+          className="d-none d-lg-block"
+          height="20px"
+          style={{ top: "220%", right: "7%" }}
+          alt=""
+        />
+        <FloatingScrap3
+          src={pipe_red}
+          height="40px"
+          className="d-none d-md-block"
+          style={{ top: "220%", left: "7%" }}
+          alt=""
+        />
+        <FloatingScrap1
+          src={pipe_yellow}
+          height="40px"
+          style={{ top: "250%", left: "40%" }}
+          alt=""
+        />
+        <Row style={{ padding: "50px 0 60px 0" }}>
           <Col lg="6" className="d-flex flex-column">
             <h5 className="text-uppercase text-success font-weight-bold mb-1">
               Why Choose Us
@@ -209,7 +263,7 @@ const Home = () => {
                 size="lg"
                 style={{ fontSize: "15px" }}
               >
-                Discover More
+                More About Us
               </Button>
             </Link>
           </Col>
@@ -250,6 +304,146 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+      <Container>
+        <FloatingScrap3
+          src={nut2_red}
+          height="30px"
+          className="d-none d-md-block"
+          style={{ top: "270%", left: "7%" }}
+          alt=""
+        />
+        <FloatingScrap2
+          src={bolt_yellow}
+          height="20px"
+          className="d-none d-lg-block"
+          style={{ top: "290%", right: "5%" }}
+          alt=""
+        />
+        <FloatingScrap3
+          src={bolt_red}
+          height="20px"
+          style={{ top: "320%", right: "25%" }}
+          alt=""
+        />
+        <FloatingScrap3
+          src={pipe_red}
+          height="40px"
+          className="d-none d-md-block"
+          style={{ top: "320%", left: "10%" }}
+          alt=""
+        />
+        <QualityRow style={{ padding: "50px 0" }}>
+          <Col
+            lg="6"
+            className="d-flex align-items-center justify-content-center"
+          >
+            <div className="text-white px-5">
+              <h2 className="font-weight-bold mb-3">
+                Grade, Quality & Infrastructure
+              </h2>
+              <p className="mb-4">
+                We are consistent in meeting and exceeding the most exacting
+                standards of manufacturing through our strict Quality Control
+                processes.
+              </p>
+              <Link
+                to="/infrastructure"
+                className="mt-auto mb-3 text-white text-uppercase small d-flex"
+                style={{ letterSpacing: "1px" }}
+              >
+                Our Infrastructure{" "}
+                <Icon path={mdiArrowRight} className="ml-2" size={0.8} />
+              </Link>
+            </div>
+          </Col>
+          <Col lg="6" className="d-flex flex-column mt-5 mt-lg-0">
+            <h5 className="text-uppercase text-success font-weight-bold mb-1 mt-3 mt-lg-0">
+              Quality & Grade
+            </h5>
+            <h3 className="text-dark font-weight-bold mb-3">
+              Excellence in Recycling
+            </h3>
+            <p className="text-dark">
+              <b>Arham Alloy</b> is a professionally managed company with an
+              extremely skilled and experienced team for who the word "quality"
+              does not merely signify reliable, world-class products.
+            </p>
+            {StatData.map((data) => (
+              <div key={data.head}>
+                <p className="text-secondary" style={{ marginBottom: "-15px" }}>
+                  {data.head}
+                </p>
+                <ProgressBar
+                  width="100%"
+                  height="10px"
+                  rect
+                  fontColor="#8e979f"
+                  percentage={data.count}
+                  rectBorderRadius="30px"
+                  trackPathColor="#8e979f"
+                  defColor={{
+                    fair: "#52DB28",
+                    good: "#52DB28",
+                    excellent: "#52DB28",
+                    poor: "#52DB28",
+                  }}
+                />
+              </div>
+            ))}
+            <Link to="/contact" className="mt-4 mb-3">
+              <Button
+                className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
+                size="lg"
+                style={{ fontSize: "15px" }}
+              >
+                Know More
+              </Button>
+            </Link>
+          </Col>
+        </QualityRow>
+      </Container>
+      <Container>
+        <Row>
+          <div className="my-4 d-flex align-items-center col-6 col-lg-auto">
+            <Icon
+              path={mdiCardAccountPhoneOutline}
+              size={1.5}
+              className="text-info"
+            />
+            <p className="mb-0 ml-3">
+              +91 8745009643 <br /> email@gmail.com
+            </p>
+          </div>
+          <div className="my-2 my-lg-4 d-flex align-items-center col-6 col-lg-auto">
+            <Icon
+              path={mdiMapMarkerRadiusOutline}
+              size={1.5}
+              className="text-info"
+            />
+            <p className="mb-0 ml-3">
+              Some cool address here, <br /> New Delhi - 110085
+            </p>
+          </div>
+          <Col sm="12" lg="" className="my-4">
+            <div className="input-group d-flex align-items-center input-group-lg">
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Your Email Address"
+              />
+              <Link to="/contact">
+                <Button
+                  className="px-lg-5 py-3 small bg-gradient-secondary border-0 text-uppercase font-weight-light"
+                  size="lg"
+                  style={{ fontSize: "15px" }}
+                >
+                  Get In Touch
+                </Button>
+              </Link>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
@@ -264,12 +458,26 @@ const LandingHome = styled.div`
     background-position: right;
   }
 `;
+
+const QualityRow = styled(Row)`
+  background-image: url(${home_bars});
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 48%;
+  @media (max-width: 991.98px) {
+    background-size: contain;
+    background-position: top center;
+  }
+`;
+
 const LandingSection1 = styled.div`
   background-image: url(${heroImg2});
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  padding: 140px 0 120px 0;
   @media (max-width: 991.98px) {
+    padding: 0px 0 20px 0;
     background-size: unset;
     background-position: left;
   }
