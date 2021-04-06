@@ -4,8 +4,8 @@ import {
   mdiCardAccountPhoneOutline,
   mdiCards,
   mdiMapMarkerRadiusOutline,
-  mdiRecycle,
   mdiTruck,
+  mdiTruckCheck,
 } from "@mdi/js";
 import { Button, Container, Col, Row } from "reactstrap";
 import styled from "styled-components";
@@ -32,15 +32,19 @@ import ProgressBar from "react-animated-progress-bar";
 
 const Home = () => {
   const Section1CardsData = [
-    { head: "Get Scrap!", icon: mdiTruck, text: "We Search and Collect Scrap" },
     {
-      head: "Segregate Scrap!",
-      icon: mdiCards,
-      text: "We Segregate Scrap Inhouse",
+      head: "Hunt for Scrap!",
+      icon: mdiTruck,
+      text: "Scrap Arrives at the Facility",
     },
     {
-      head: "Recycle Scrap!",
-      icon: mdiRecycle,
+      head: "Get. Set. Segregate!",
+      icon: mdiCards,
+      text: "Who Wants to Sort Out Scrap",
+    },
+    {
+      head: "Sell Scrap!",
+      icon: mdiTruckCheck,
       text: "We Recycle and Ship the Scrap",
     },
   ];
@@ -53,16 +57,16 @@ const Home = () => {
         "We have more than 25 successful years of experience in the industry.",
     },
     {
-      head: "Tons of Production",
-      count: 20,
+      head: "Tons of Scrap Sorted",
+      count: 15,
       counthelp: "k",
-      text: "We have an annual production rate of over 20k tons.",
+      text: "We go through more than 15k tons of scrap an year.",
     },
     {
-      head: "Tons of Melt Size",
-      count: 3.9,
-      text: "We have over 3.9 tons of melt size.",
-      decimals: 1,
+      head: "Sq. Feet of Processing Area",
+      count: 70,
+      counthelp: "k",
+      text: "We have over 70k Square Feet of Processing Area.",
     },
   ];
 
@@ -132,7 +136,7 @@ const Home = () => {
                   style={{ marginTop: "-1.5rem" }}
                 >
                   <TextLoop
-                    interval={2000}
+                    interval={2500}
                     children={[
                       "Non-Ferrous",
                       "Aluminium",
@@ -140,7 +144,6 @@ const Home = () => {
                       "Copper",
                       "Tungsten",
                       "Nickel Alloys",
-                      "Tantalum",
                       "Titanium",
                       "Nickel",
                     ]}
@@ -160,9 +163,7 @@ const Home = () => {
               </div>
               <p className="mt-3 pr-0 mb-5 pr-lg-5 text-info">
                 We segregate the material at our state-of-the-art processing
-                house situated at our newly built unit situated at Faridabad,
-                which includes 2 rotary sieves, a couple of vibrating sieves,
-                magnetic separators, and sorting stations.
+                house situated at our newly built facility at Faridabad.
               </p>
               <Row className="pl-3">
                 <Link to="/contact">
@@ -171,16 +172,7 @@ const Home = () => {
                     size="lg"
                     style={{ fontSize: "15px" }}
                   >
-                    Our Products
-                  </Button>
-                </Link>
-                <Link to="/contact">
-                  <Button
-                    className="col col-lg-auto px-lg-5 py-3 small ml-3 bg-gradient-secondary border-0 rounded text-uppercase font-weight-light"
-                    size="lg"
-                    style={{ fontSize: "15px" }}
-                  >
-                    Contact Us
+                    Sell Your Scrap
                   </Button>
                 </Link>
               </Row>
@@ -253,19 +245,22 @@ const Home = () => {
         <Row style={{ padding: "50px 0 60px 0" }}>
           <Col lg="6" className="d-flex flex-column">
             <h5 className="text-uppercase text-success font-weight-bold mb-1">
-              Why Choose Us
+              SELL YOUR SCRAP
             </h5>
             <h3 className="text-dark font-weight-bold mb-3">
-              Facilities for Manufacturing, Testing & Quality Control
+              This Couldn't be Farther From the Truth
             </h3>
             <p className="text-dark">
-              We at <b>Paras Steel Industries</b> are committed to set
-              benchmarks in the field of innovation and technology with
-              delivering quality products to our clients. The focus of client
-              requirements has been our success mantra. With decades of rich
-              experience in the steel trading industry, The A-Team of Paras
-              Steel Industries laid the foundation stone of Paras Steel
-              Industries in 2010.
+              The term <b>Scrap</b> is sometimes confused with waste, which
+              couldn’t be farther from the truth. Unlike waste, scrap refers to
+              the material, namely metal, that may have become old, rusty and
+              perhaps even broken, but it can be recycled and re-purposed. This
+              largely covers vehicle parts, building material, surplus parts
+              leftover after manufacturing and consumption, etc.
+            </p>
+            <p className="text-dark">
+              Needless to say, it fetches very high value and we'll make sure to
+              get you that value.
             </p>
             <Link to="/contact" className="mt-auto mb-3">
               <Button
@@ -273,7 +268,7 @@ const Home = () => {
                 size="lg"
                 style={{ fontSize: "15px" }}
               >
-                More About Us
+                Sell Your Scrap
               </Button>
             </Link>
           </Col>
@@ -348,9 +343,7 @@ const Home = () => {
             className="d-flex align-items-center justify-content-center"
           >
             <div className="text-white px-5">
-              <h2 className="font-weight-bold mb-3">
-                Grade, Quality & Infrastructure
-              </h2>
+              <h2 className="font-weight-bold mb-3">Quality </h2>
               <p className="mb-4">
                 We are consistent in meeting and exceeding the most exacting
                 standards of manufacturing through our strict Quality Control
@@ -368,15 +361,15 @@ const Home = () => {
           </Col>
           <Col lg="6" className="d-flex flex-column mt-5 mt-lg-0">
             <h5 className="text-uppercase text-success font-weight-bold mb-1 mt-3 mt-lg-0">
-              Quality & Grade
+              Quality
             </h5>
             <h3 className="text-dark font-weight-bold mb-3">
               Excellence in Recycling
             </h3>
             <p className="text-dark">
-              <b>Arham Alloy</b> is a professionally managed company with an
-              extremely skilled and experienced team for who the word "quality"
-              does not merely signify reliable, world-class products.
+              <b>Arham Alloy & Steel</b> is a professionally managed company
+              with an extremely skilled and experienced team for who the word
+              "quality" does not merely signify reliable, world-class products.
             </p>
             {StatData.map((data) => (
               <div key={data.head}>
@@ -417,7 +410,7 @@ const Home = () => {
           Our Partners
         </h5>
         <h3 className="text-dark text-center font-weight-bold mb-1">
-          Some of Our Beloved Clients
+          Some of Our Clients
         </h3>
         <Row className="my-4" style={{ opacity: "0.3" }}>
           <Col className="d-flex align-items-center justify-content-center ">
@@ -446,9 +439,7 @@ const Home = () => {
               size={1.5}
               className="text-info"
             />
-            <p className="mb-0 ml-3">
-              +91 9650 485 980 <br /> info@arhamalloy.com
-            </p>
+            <p className="mb-0 ml-3">info@arhamalloy.com</p>
           </div>
           <div className="my-2 my-lg-4 d-flex align-items-center col-6 col-lg-auto">
             <Icon

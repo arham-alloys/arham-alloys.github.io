@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <>
       <Navbar
-        className="shadow px-lg-5 py-0"
+        className="px-lg-5 py-0"
         color="white"
         expand="lg"
         fixed="top"
@@ -42,12 +42,12 @@ const NavBar = () => {
             </NavItem>
             <NavItem className="d-flex align-items-center pr-2 mr-3 py-1">
               <CustomNavLink to="/about" className="text-info">
-                Products
+                Sell Your Scrap
               </CustomNavLink>
             </NavItem>
             <NavItem className="d-flex align-items-center pr-2 mr-3 py-1">
               <CustomNavLink to="/about" className="text-info">
-                Quality & Grade
+                Quality
               </CustomNavLink>
             </NavItem>
             <NavItem className="d-flex align-items-center pr-2 mr-2 py-1">
