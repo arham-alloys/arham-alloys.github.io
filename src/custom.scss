@@ -19,6 +19,24 @@ $btn-focus-box-shadow: none !important;
   background-color: #D2E8C4;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(96, 87, 150);
+  background: -moz-linear-gradient(-155deg, rgba(96, 87, 150, 1) 0%, rgba(59, 43, 152, 1) 100%);
+  background: -webkit-linear-gradient(-155deg, rgba(96, 87, 150, 1) 0%, rgba(59, 43, 152, 1) 100%);
+  background: linear-gradient(-155deg, rgba(96, 87, 150, 1) 0%, rgba(59, 43, 152, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#605796", endColorstr="#3b2b98", GradientType=1);
+  border-radius: 1rem;
+}
+
 .w-md-45 {
   @media (max-width: 991.98px) {
     width: 45%;

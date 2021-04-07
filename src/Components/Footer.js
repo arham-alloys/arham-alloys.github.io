@@ -2,6 +2,11 @@ import React from "react";
 import logo from "../img/logo-circle-text.png";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, ListGroup } from "reactstrap";
+import partner2 from "../img/partners/bir.svg";
+import partner2_color from "../img/partners/bir-color.svg";
+import partner3 from "../img/partners/mrai.png";
+import partner3_color from "../img/partners/mrai-color.png";
+import AssociateImg from "./AssociateImg";
 
 const Footer = () => {
   return (
@@ -19,34 +24,7 @@ const Footer = () => {
             it was rebranded as Arham Alloy & Steel Pvt Ltd.
           </p>
         </Col>
-        <Col sm="12" lg="3">
-          <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
-            Products
-          </h5>
-          <ListGroup className="no-list">
-            <li>
-              <Link to="#" className="text-secondary">
-                Stainless Steel Round Bars
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className="text-secondary">
-                Stainless Steel Flat Bars
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className="text-secondary">
-                Stainless Steel XYZ
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className="text-secondary">
-                Stainless Steel More
-              </Link>
-            </li>
-          </ListGroup>
-        </Col>
-        <Col sm="12" lg="3">
+        <Col sm="12" lg="5">
           <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
             Contact
           </h5>
@@ -60,14 +38,11 @@ const Footer = () => {
               Faridabad, Haryana, India-121005
             </li>
             <li>
-              <b>Phone:</b> +91 9650 485 980
-            </li>
-            <li>
               <b>Email:</b> info@arhamalloy.com
             </li>
           </ListGroup>
         </Col>
-        <Col sm="12" lg="3">
+        <Col sm="12" lg="2">
           <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
             Quick Links
           </h5>
@@ -84,12 +59,12 @@ const Footer = () => {
             </li>
             <li>
               <Link to="#" className="text-secondary">
-                Products
+                Sell Your Scrap
               </Link>
             </li>
             <li>
               <Link to="#" className="text-secondary">
-                Quality & Grade
+                Quality
               </Link>
             </li>
             <li>
@@ -109,12 +84,39 @@ const Footer = () => {
             </li>
           </ListGroup>
         </Col>
+        <Col sm="12" lg="2">
+          <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
+            Our Associates
+          </h5>
+          <ListGroup className="no-list">
+            <li>
+              <a
+                href="https://www.bir.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary"
+              >
+                <AssociateImg img1={partner2} img2={partner2_color} />
+              </a>
+            </li>
+            <li className="mt-2">
+              <a
+                href="https://www.mrai.org.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary "
+              >
+                <AssociateImg img1={partner3} img2={partner3_color} />
+              </a>
+            </li>
+          </ListGroup>
+        </Col>
       </Row>
       <Row className="pb-3 text-secondary mt-4">
         <Col>
           <p className="mb-0 small">
-            Copyright © 2021 Arham Alloy Industries | All rights reserved | Made
-            with{" "}
+            Copyright © {new Date().getFullYear()} Arham Alloy Industries | All
+            rights reserved | Made with{" "}
             <span role="img" aria-labelledby="heart">
               ❤️
             </span>{" "}

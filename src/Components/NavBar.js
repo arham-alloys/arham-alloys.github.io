@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Collapse, Navbar, Nav, NavItem, Button } from "reactstrap";
 import { Link } from "react-router-dom";
 import logo from "../img/logo-circle-text.png";
@@ -10,10 +10,23 @@ const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
   const toggleNavbar = () => setCollapsed(!collapsed);
 
+  const [scrollPosition, setScrollPosition] = useState(window.pageYOffset > 5);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position > 5);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Navbar
-        className="px-lg-5 py-0"
+        className={`${scrollPosition ? "shadow" : ""}  px-lg-5 py-0`}
         color="white"
         expand="lg"
         fixed="top"

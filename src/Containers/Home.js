@@ -10,8 +10,6 @@ import {
 import { Button, Container, Col, Row } from "reactstrap";
 import styled from "styled-components";
 import partner1 from "../img/partners/jsl.png";
-import partner2 from "../img/partners/bir.svg";
-import partner3 from "../img/partners/mrai.png";
 import heroImg from "../img/hero-img-2.png";
 import heroImg2 from "../img/hero-img-3.png";
 import home_bars from "../img/home-bars.png";
@@ -412,15 +410,13 @@ const Home = () => {
         <h3 className="text-dark text-center font-weight-bold mb-1">
           Some of Our Clients
         </h3>
-        <Row className="my-4" style={{ opacity: "0.3" }}>
-          <Col className="d-flex align-items-center justify-content-center ">
+        <Row className="my-4 justify-content-center" style={{ opacity: "0.3" }}>
+          <Col
+            xs="6"
+            lg="4"
+            className="d-flex align-items-center justify-content-center "
+          >
             <img src={partner1} alt="" className="img-fluid w-100 w-lg-50" />
-          </Col>
-          <Col className="d-flex align-items-center justify-content-center ">
-            <img src={partner3} alt="" className="img-fluid w-100 w-lg-25" />
-          </Col>
-          <Col className="d-flex align-items-center justify-content-center ">
-            <img src={partner2} alt="" className="img-fluid w-100 w-lg-50" />
           </Col>
         </Row>
       </Container>
