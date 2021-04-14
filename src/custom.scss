@@ -128,16 +128,56 @@ input:-webkit-autofill {
 }
 
 .data-card-body {
-  background: #f8f9fa;
+  position: relative;
+}
 
-  &:hover {
-    background: #3b3663;
-  }
+.data-card-front {
+  z-index: 10;
+  background: #f8f9fa;
+  border-radius: 0.25rem;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.data-card-body:hover .data-card-front {
+  transform: translateY(-10px);
+  background: #3b3663;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .4);
 }
 
 .data-card-title {
   color: #3b3663;
 }
+
+.data-card-back1,
+.data-card-back2 {
+  position: absolute;
+  height: 100px;
+  bottom: 0px;
+  left: 50%;
+  border-radius: 0.25rem;
+  background: #3b3663;
+  transform: translateX(-50%);
+}
+
+.data-card-back1 {
+  opacity: 0.3;
+  width: 98%;
+}
+
+.data-card-back2 {
+  opacity: 0.2;
+  width: 96%;
+}
+
+.data-card-body:hover .data-card-back1 {
+  transform: translateX(-50%) translateY(5px);
+}
+
+.data-card-body:hover .data-card-back2 {
+  transform: translateX(-50%) translateY(15px);
+}
+
 
 .data-card-body:hover .data-card-title {
   color: #f8f9fa;
