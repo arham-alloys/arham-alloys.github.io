@@ -52,13 +52,14 @@ const Home = () => {
       head: "Years of Experience",
       count: 25,
       text:
-        "We have more than 25 successful years of experience in the industry.",
+        "With over 25 years of experience in the industry, we have a well established clientele who are also market leaders in recycling industry.",
     },
     {
       head: "Tons of Scrap Sorted",
       count: 15,
       counthelp: "k",
-      text: "We go through more than 15k tons of scrap an year.",
+      text:
+        "With tonnes of scrap to sort we need hundreds of hands on the table to sort it out and thousands of square feet in area to function",
     },
     {
       head: "Sq. Feet of Processing Area",
@@ -290,7 +291,7 @@ const Home = () => {
                         )}
                       </CountUp>
                     </h1>{" "}
-                    <span className="text-success">+</span>
+                    <span className="text-success h3">+</span>
                   </div>
                   <p
                     className="mb-0 text-uppercase text-secondary small text-left text-lg-right"
@@ -335,17 +336,29 @@ const Home = () => {
           style={{ top: "320%", left: "10%" }}
           alt=""
         />
-        <QualityRow style={{ padding: "50px 0" }}>
+        <Row style={{ padding: "70px 0" }}>
           <Col
             lg="6"
             className="d-flex align-items-center justify-content-center"
           >
             <div className="text-white px-5">
               <h2 className="font-weight-bold mb-3">Quality </h2>
-              <p className="mb-4">
-                We are consistent in meeting and exceeding the most exacting
-                standards of manufacturing through our strict Quality Control
-                processes.
+              <img
+                src={home_bars}
+                style={{
+                  position: "absolute",
+                  left: 0,
+                  top: -100,
+                  width: "95%",
+                  zIndex: -1,
+                }}
+                alt=""
+              />
+              <p className="mb-4 bg-md-dark">
+                The word quality not only means fulfillment of commitment to us
+                towards our clients, but also a parameter of excellence along
+                with a medium of goodwill. Better quality always translates into
+                better associations.
               </p>
               <Link
                 to="/infrastructure"
@@ -369,7 +382,7 @@ const Home = () => {
               with an extremely skilled and experienced team for who the word
               "quality" does not merely signify reliable, world-class products.
             </p>
-            {StatData.map((data) => (
+            {/* {StatData.map((data) => (
               <div key={data.head}>
                 <p className="text-secondary" style={{ marginBottom: "-15px" }}>
                   {data.head}
@@ -390,7 +403,7 @@ const Home = () => {
                   }}
                 />
               </div>
-            ))}
+            ))} */}
             <Link to="/contact" className="mt-4 mb-3">
               <Button
                 className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
@@ -401,7 +414,7 @@ const Home = () => {
               </Button>
             </Link>
           </Col>
-        </QualityRow>
+        </Row>
       </Container>
       <Container>
         <h5 className="text-uppercase text-success text-center font-weight-bold mb-1 mt-0 mt-lg-5">
@@ -444,7 +457,7 @@ const Home = () => {
               className="text-info"
             />
             <p className="mb-0 ml-3">
-              Plot No.159, Sohna Road, Sector-24, <br /> Faridabad, Haryana,
+              159, Sohna Road, Sector-24, <br /> Faridabad, Haryana,
               India-121005
             </p>
           </div>
@@ -480,17 +493,6 @@ const LandingHome = styled.div`
   background-size: cover;
   @media (max-width: 991.98px) {
     background-position: right;
-  }
-`;
-
-const QualityRow = styled(Row)`
-  background-image: url(${home_bars});
-  background-repeat: no-repeat;
-  background-position: center left;
-  background-size: 48%;
-  @media (max-width: 991.98px) {
-    background-size: contain;
-    background-position: top center;
   }
 `;
 

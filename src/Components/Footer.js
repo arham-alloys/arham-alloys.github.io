@@ -24,7 +24,7 @@ const Footer = () => {
             it was rebranded as Arham Alloy & Steel Pvt Ltd.
           </p>
         </Col>
-        <Col sm="12" lg="5">
+        <Col sm="12" lg="4">
           <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
             Contact
           </h5>
@@ -64,11 +64,6 @@ const Footer = () => {
             </li>
             <li>
               <Link to="#" className="text-secondary">
-                Quality
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className="text-secondary">
                 Infrastructure
               </Link>
             </li>
@@ -84,9 +79,9 @@ const Footer = () => {
             </li>
           </ListGroup>
         </Col>
-        <Col sm="12" lg="2">
+        <Col sm="12" lg="3">
           <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
-            Our Associates
+            Proud Members of
           </h5>
           <ListGroup className="no-list">
             <li>
@@ -115,8 +110,8 @@ const Footer = () => {
       <Row className="pb-3 text-secondary mt-4">
         <Col>
           <p className="mb-0 small">
-            Copyright © {new Date().getFullYear()} Arham Alloy Industries | All
-            rights reserved | Made with{" "}
+            Copyright © {new Date().getFullYear()} Arham Alloy & Steel Pvt. Ltd.
+            | All rights reserved | Made with{" "}
             <span role="img" aria-labelledby="heart">
               ❤️
             </span>{" "}

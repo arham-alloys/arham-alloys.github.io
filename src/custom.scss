@@ -77,6 +77,14 @@ html {
   }
 }
 
+.bg-md-dark {
+  @media (max-width: 991.98px) {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 1rem;
+  }
+}
+
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,

@@ -58,11 +58,6 @@ const NavBar = () => {
                 Sell Your Scrap
               </CustomNavLink>
             </NavItem>
-            <NavItem className="d-flex align-items-center pr-2 mr-3 py-1">
-              <CustomNavLink to="/about" className="text-info">
-                Quality
-              </CustomNavLink>
-            </NavItem>
             <NavItem className="d-flex align-items-center pr-2 mr-2 py-1">
               <CustomNavLink to="/events" className="text-info">
                 Infrastructure
