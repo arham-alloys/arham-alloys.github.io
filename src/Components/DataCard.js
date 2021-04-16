@@ -24,8 +24,8 @@ const DataCard = ({ data, index }) => {
         <hr className="data-card-seperator" />
         <p className="mb-0 data-card-text">{data.text}</p>
       </div>
-      <div class="data-card-back1">&nbsp;</div>
-      <div class="data-card-back2">&nbsp;</div>
+      <div className="data-card-back1">&nbsp;</div>
+      <div className="data-card-back2">&nbsp;</div>
     </Col>
   );
 };

@@ -43,7 +43,7 @@ const Home = () => {
     {
       head: "Sell Scrap!",
       icon: mdiTruckCheck,
-      text: "We Recycle and Ship the Scrap",
+      text: "Another Product Restarts its Lifecycle",
     },
   ];
 
@@ -157,7 +157,31 @@ const Home = () => {
               </div>
               <div className="d-block d-lg-none">
                 <h1 className="text-dark font-weight-bold mb-0">
-                  We Deal with Non-Ferrous Scrap
+                  We Deal with
+                </h1>
+                <h1
+                  className="text-dark font-weight-bold mb-0"
+                  style={{ marginTop: "-0.5rem" }}
+                >
+                  <TextLoop
+                    interval={2500}
+                    children={[
+                      "Non-Ferrous",
+                      "Aluminium",
+                      "Stainless Steel",
+                      "Copper",
+                      "Tungsten",
+                      "Nickel Alloys",
+                      "Titanium",
+                      "Nickel",
+                    ]}
+                  />
+                </h1>
+                <h1
+                  className="text-dark font-weight-bold mb-0"
+                  style={{ marginTop: "-0.5rem" }}
+                >
+                  Scrap
                 </h1>
               </div>
               <p className="mt-3 pr-0 mb-5 pr-lg-5 text-info">
