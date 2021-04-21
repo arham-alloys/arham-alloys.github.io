@@ -17,7 +17,7 @@ const AssociateImg = ({ img1, img2 }) => {
       alt=""
       onMouseOver={mouseOver}
       onMouseLeave={mouseLeave}
-      className="img-fluid w-25 w-lg-50"
+      className="img-fluid w-25"
     />
   );
 };

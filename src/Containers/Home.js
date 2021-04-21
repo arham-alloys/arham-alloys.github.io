@@ -59,13 +59,14 @@ const Home = () => {
       count: 15,
       counthelp: "k",
       text:
-        "With tonnes of scrap to sort we need hundreds of hands on the table to sort it out and thousands of square feet in area to function",
+        "With tonnes of scrap to sort we need hundreds of hands on the table to sort it out.",
     },
     {
       head: "Sq. Feet of Processing Area",
       count: 70,
       counthelp: "k",
-      text: "We have over 70k Square Feet of Processing Area.",
+      text:
+        "Such workforce requires thousands of square feet of area to operate, store and make way for consignments.",
     },
   ];
 
