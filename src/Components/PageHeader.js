@@ -1,5 +1,5 @@
 import React from "react";
-import headerBg from '../img/header-title.png';
+import headerBg from "../img/header-title.png";
 import styled from "styled-components";
 
 const PageHeader = ({ title }) => {
@@ -10,7 +10,9 @@ const PageHeader = ({ title }) => {
           <div className="row">
             <div className="col">
               <div className="text-center">
-                <h1 className="text-primary font-weight-bold mb-4">{title}</h1>
+                <h1 className="text-info display-4 font-weight-bold mb-4">
+                  {title}
+                </h1>
               </div>
             </div>
           </div>
@@ -18,15 +20,15 @@ const PageHeader = ({ title }) => {
       </Header>
     </>
   );
-}
+};
 
 const Header = styled.div`
   height: 300px;
   background-image: url(${headerBg});
   background-size: cover;
-  @media (max-width: 991.98px) { 
+  @media (max-width: 991.98px) {
     height: 250px;
   }
-`
+`;
 
 export default PageHeader;

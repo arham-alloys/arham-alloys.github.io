@@ -54,22 +54,22 @@ const NavBar = () => {
               </CustomNavLink>
             </NavItem>
             <NavItem className="d-flex align-items-center pr-2 mr-3 py-1">
-              <CustomNavLink to="/about" className="text-info">
+              <CustomNavLink to="#" className="text-info">
                 Sell Your Scrap
               </CustomNavLink>
             </NavItem>
             <NavItem className="d-flex align-items-center pr-2 mr-2 py-1">
-              <CustomNavLink to="/events" className="text-info">
+              <CustomNavLink to="#" className="text-info">
                 Infrastructure
               </CustomNavLink>
             </NavItem>
             <NavItem className="d-flex align-items-center pr-2 mr-2 py-1">
-              <CustomNavLink to="/events" className="text-info">
+              <CustomNavLink to="#" className="text-info">
                 Careers
               </CustomNavLink>
             </NavItem>
             <NavItem className="mt-2 mt-lg-0 ml-lg-3">
-              <Link to="/contact">
+              <Link to="#">
                 <Button className="px-4 bg-gradient-secondary border-0 rounded">
                   Contact Us
                 </Button>

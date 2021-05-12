@@ -190,7 +190,7 @@ const Home = () => {
                 house situated at our newly built facility at Faridabad.
               </p>
               <Row className="pl-3">
-                <Link to="/contact">
+                <Link to="#">
                   <Button
                     className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
                     size="lg"
@@ -286,7 +286,7 @@ const Home = () => {
               Needless to say, it fetches very high value and we'll make sure to
               get you that value.
             </p>
-            <Link to="/contact" className="mt-auto mb-3">
+            <Link to="#" className="mt-auto mb-3">
               <Button
                 className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
                 size="lg"
@@ -429,13 +429,13 @@ const Home = () => {
                 />
               </div>
             ))} */}
-            <Link to="/contact" className="mt-4 mb-3">
+            <Link to="/about" className="mt-4 mb-3">
               <Button
                 className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
                 size="lg"
                 style={{ fontSize: "15px" }}
               >
-                Know More
+                About Us
               </Button>
             </Link>
           </Col>
@@ -473,7 +473,11 @@ const Home = () => {
               size={1.5}
               className="text-info"
             />
-            <p className="mb-0 ml-3">info@arhamalloy.com</p>
+            <p className="mb-0 ml-3 text-dark">
+              <a className="text-dark" href="mailto:info@arhamalloy.com">
+                info@arhamalloy.com
+              </a>
+            </p>
           </div>
           <div className="my-2 my-lg-4 d-flex align-items-center col-6 col-lg-auto">
             <Icon
@@ -482,8 +486,15 @@ const Home = () => {
               className="text-info"
             />
             <p className="mb-0 ml-3">
-              159, Sohna Road, Sector-24, <br /> Faridabad, Haryana,
-              India-121005
+              <a
+                className="text-dark"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://goo.gl/maps/QpCxvBwsErqtS21P9"
+              >
+                159, Sohna Road, Sector-24, <br /> Faridabad, Haryana,
+                India-121005
+              </a>
             </p>
           </div>
           <Col sm="12" lg="" className="my-4">
@@ -493,7 +504,7 @@ const Home = () => {
                 className="form-control"
                 placeholder="Your Email Address"
               />
-              <Link to="/contact">
+              <Link to="#">
                 <Button
                   className="px-lg-5 py-3 small bg-gradient-secondary border-0 text-uppercase font-weight-light"
                   size="lg"

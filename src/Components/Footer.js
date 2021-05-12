@@ -34,11 +34,22 @@ const Footer = () => {
               Multani Dhanda, Paharganj, New Delhi, India-110055
             </li>
             <li>
-              <b>Work Address:</b> Plot No.159, Sohna Road, Sector-24,
-              Faridabad, Haryana, India-121005
+              <b>Work Address:</b>{" "}
+              <a
+                className="text-secondary"
+                href="https://goo.gl/maps/QpCxvBwsErqtS21P9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Plot No.159, Sohna Road, Sector-24, Faridabad, Haryana,
+                India-121005
+              </a>
             </li>
             <li>
-              <b>Email:</b> info@arhamalloy.com
+              <b>Email:</b>{" "}
+              <a className="text-secondary" href="mailto:info@arhamalloy.com">
+                info@arhamalloy.com
+              </a>
             </li>
           </ListGroup>
         </Col>
@@ -48,12 +59,12 @@ const Footer = () => {
           </h5>
           <ListGroup className="no-list">
             <li>
-              <Link to="#" className="text-secondary">
+              <Link to="/" className="text-secondary">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="#" className="text-secondary">
+              <Link to="/about" className="text-secondary">
                 About
               </Link>
             </li>
