@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Container, Row, Col } from "reactstrap";
+import aboutImg from "../img/about.png";
 import styled from "styled-components";
 import heroImg2 from "../img/hero-img-3.png";
 import pipe_yellow from "../img/scrap/pipe-yellow.png";
@@ -8,11 +9,8 @@ import bolt_red from "../img/scrap/bolt-red.png";
 import pipe_red from "../img/scrap/pipe-red.png";
 import nut1_red from "../img/scrap/nut1-red.png";
 import bolt_yellow from "../img/scrap/bolt-yellow.png";
-import Icon from "@mdi/react";
-import { mdiCardAccountPhoneOutline, mdiMapMarkerRadiusOutline } from "@mdi/js";
-import { Button } from "reactstrap";
 
-const Contact = () => {
+const Infrastructure = () => {
   return (
     <LandingSection1>
       <FloatingScrap1
@@ -55,7 +53,7 @@ const Contact = () => {
             opacity: 1,
           }}
         >
-          Contact Us
+          Infrastructure
         </h1>
         <Row>
           <Col
@@ -71,113 +69,45 @@ const Contact = () => {
                 position: "absolute",
                 top: "0",
                 left: "-100%",
-                transform: "rotate(-90deg) translate(-40%, -82%)",
+                transform: "rotate(-90deg) translate(-42%, -135%)",
               }}
             >
-              Contact Us
+              Infrastructure
             </h5>
           </Col>
-          <Col
-            className="d-flex justify-content-center flex-column order-3 order-lg-2 pr-0 pr-lg-5"
-            sm="12"
-            lg="9"
-          >
+          <Col className="d-flex flex-column order-3 order-lg-2" sm="12" lg="5">
             <h1 className="text-dark font-weight-bold mb-4 mt-3 mt-lg-0">
-              Get in Touch With Us Or Visit Our Facility
+              We Are A State-of-The-Art Processing House
             </h1>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14045.42356975292!2d77.3020823!3d28.348088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7242671613101be7!2sArham%20Alloy%20and%20Steel!5e0!3m2!1sen!2sin!4v1620976895102!5m2!1sen!2sin"
-              width="100%"
-              height="500px"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              allowfullscreen=""
-              loading="lazy"
-              title="Arham Alloy and Steel"
-            ></iframe>
+            <div className="flex-grow-1 align-items-center justify-content-center d-flex">
+              <p className="text-info h4">Page Under Construction!</p>
+            </div>
+          </Col>
+          <Col
+            className="text-center mt-4 mt-lg-0 d-flex justify-content-end order-1 order-lg-3"
+            sm="12"
+            lg="4"
+          >
+            <AboutImg src={aboutImg} alt="" />
           </Col>
         </Row>
-        <Container className="mt-4">
-          <Row>
-            <div className="my-4 d-flex align-items-center col-6 col-lg-auto">
-              <Icon
-                path={mdiCardAccountPhoneOutline}
-                size={1.5}
-                className="text-info"
-              />
-              <p className="mb-0 ml-3 text-dark">
-                <a className="text-dark" href="mailto:info@arhamalloy.com">
-                  contact@arhamalloy.com
-                </a>
-              </p>
-            </div>
-            <div className="my-2 my-lg-4 d-flex align-items-center col-6 col-lg-auto">
-              <Icon
-                path={mdiMapMarkerRadiusOutline}
-                size={1.5}
-                className="text-info"
-              />
-              <p className="mb-0 ml-3">
-                <a
-                  className="text-dark"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://goo.gl/maps/QpCxvBwsErqtS21P9"
-                >
-                  159, Sohna Road, Sector-24, <br /> Faridabad, Haryana,
-                  India-121005
-                </a>
-              </p>
-            </div>
-            <Col sm="12" lg="" className="my-4">
-              <form
-                action="https://mailthis.to/ContacAASPL"
-                method="POST"
-                className="input-group d-flex align-items-center input-group-lg"
-              >
-                <input
-                  type="email"
-                  name="_replyto"
-                  className="form-control"
-                  placeholder="Your Email Address"
-                  required="true"
-                />
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="Contact form submitted"
-                ></input>
-                <input type="hidden" name="_honeypot" value=""></input>
-                <input
-                  type="hidden"
-                  name="_confirmation"
-                  value="Thanks for contacting Arham Alloy & Steel we'll get in touch with you shortly!"
-                ></input>
-                <Button
-                  className="px-lg-5 py-3 small bg-gradient-secondary border-0 text-uppercase font-weight-light"
-                  size="lg"
-                  style={{ fontSize: "15px" }}
-                  value="send"
-                >
-                  Get In Touch
-                </Button>
-              </form>
-            </Col>
-          </Row>
-        </Container>
       </Container>
     </LandingSection1>
   );
 };
+
+const AboutImg = styled.img`
+  @media (max-width: 991.98px) {
+    width: 100%;
+  }
+`;
 
 const LandingSection1 = styled.div`
   background-image: url(${heroImg2});
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 140px 0 0 0;
+  padding: 140px 0 120px 0;
   @media (max-width: 991.98px) {
     padding: 0px 0 20px 0;
     background-size: unset;
@@ -260,4 +190,4 @@ const FloatingScrap3 = styled.img`
   animation-timing-function: ease-in-out;
 `;
 
-export default Contact;
+export default Infrastructure;

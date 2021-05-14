@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  mdiArrowRight,
-  mdiCardAccountPhoneOutline,
-  mdiCards,
-  mdiMapMarkerRadiusOutline,
-  mdiTruck,
-  mdiTruckCheck,
-} from "@mdi/js";
+import { mdiArrowRight, mdiCards, mdiTruck, mdiTruckCheck } from "@mdi/js";
 import { Button, Container, Col, Row } from "reactstrap";
 import styled from "styled-components";
 import partner1 from "../img/partners/jsl.png";
@@ -26,7 +19,7 @@ import DataCard from "../Components/DataCard";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import Icon from "@mdi/react";
-import ProgressBar from "react-animated-progress-bar";
+// import ProgressBar from "react-animated-progress-bar";
 
 const Home = () => {
   const Section1CardsData = [
@@ -51,39 +44,36 @@ const Home = () => {
     {
       head: "Years of Experience",
       count: 25,
-      text:
-        "With over 25 years of experience in the industry, we have a well established clientele who are also market leaders in recycling industry.",
+      text: "With over 25 years of experience in the industry, we have a well established clientele who are also market leaders in recycling industry.",
     },
     {
       head: "Tons of Scrap Sorted",
       count: 15,
       counthelp: "k",
-      text:
-        "With tonnes of scrap to sort we need hundreds of hands on the table to sort it out.",
+      text: "With tonnes of scrap to sort we need hundreds of hands on the table to sort it out.",
     },
     {
       head: "Sq. Feet of Processing Area",
       count: 70,
       counthelp: "k",
-      text:
-        "Such workforce requires thousands of square feet of area to operate, store and make way for consignments.",
+      text: "Such workforce requires thousands of square feet of area to operate, store and make way for consignments.",
     },
   ];
 
-  const StatData = [
-    {
-      head: "Stat 1",
-      count: 80,
-    },
-    {
-      head: "Stat 2",
-      count: 90,
-    },
-    {
-      head: "Stat 3",
-      count: 75,
-    },
-  ];
+  // const StatData = [
+  //   {
+  //     head: "Stat 1",
+  //     count: 80,
+  //   },
+  //   {
+  //     head: "Stat 2",
+  //     count: 90,
+  //   },
+  //   {
+  //     head: "Stat 3",
+  //     count: 75,
+  //   },
+  // ];
 
   return (
     <>
@@ -190,7 +180,7 @@ const Home = () => {
                 house situated at our newly built facility at Faridabad.
               </p>
               <Row className="pl-3">
-                <Link to="#">
+                <Link to="/sell-your-scrap">
                   <Button
                     className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
                     size="lg"
@@ -286,7 +276,7 @@ const Home = () => {
               Needless to say, it fetches very high value and we'll make sure to
               get you that value.
             </p>
-            <Link to="#" className="mt-auto mb-3">
+            <Link to="/sell-your-scrap" className="mt-auto mb-3">
               <Button
                 className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
                 size="lg"
@@ -466,56 +456,6 @@ const Home = () => {
           style={{ top: "350%", right: "4%" }}
           alt=""
         />
-        <Row>
-          <div className="my-4 d-flex align-items-center col-6 col-lg-auto">
-            <Icon
-              path={mdiCardAccountPhoneOutline}
-              size={1.5}
-              className="text-info"
-            />
-            <p className="mb-0 ml-3 text-dark">
-              <a className="text-dark" href="mailto:info@arhamalloy.com">
-                info@arhamalloy.com
-              </a>
-            </p>
-          </div>
-          <div className="my-2 my-lg-4 d-flex align-items-center col-6 col-lg-auto">
-            <Icon
-              path={mdiMapMarkerRadiusOutline}
-              size={1.5}
-              className="text-info"
-            />
-            <p className="mb-0 ml-3">
-              <a
-                className="text-dark"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://goo.gl/maps/QpCxvBwsErqtS21P9"
-              >
-                159, Sohna Road, Sector-24, <br /> Faridabad, Haryana,
-                India-121005
-              </a>
-            </p>
-          </div>
-          <Col sm="12" lg="" className="my-4">
-            <div className="input-group d-flex align-items-center input-group-lg">
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Your Email Address"
-              />
-              <Link to="#">
-                <Button
-                  className="px-lg-5 py-3 small bg-gradient-secondary border-0 text-uppercase font-weight-light"
-                  size="lg"
-                  style={{ fontSize: "15px" }}
-                >
-                  Get In Touch
-                </Button>
-              </Link>
-            </div>
-          </Col>
-        </Row>
       </Container>
     </>
   );

@@ -47,8 +47,11 @@ const Footer = () => {
             </li>
             <li>
               <b>Email:</b>{" "}
-              <a className="text-secondary" href="mailto:info@arhamalloy.com">
-                info@arhamalloy.com
+              <a
+                className="text-secondary"
+                href="mailto:contact@arhamalloy.com"
+              >
+                contact@arhamalloy.com
               </a>
             </li>
           </ListGroup>
@@ -69,22 +72,22 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="#" className="text-secondary">
+              <Link to="/sell-your-scrap" className="text-secondary">
                 Sell Your Scrap
               </Link>
             </li>
             <li>
-              <Link to="#" className="text-secondary">
+              <Link to="/infrastructure" className="text-secondary">
                 Infrastructure
               </Link>
             </li>
             <li>
-              <Link to="#" className="text-secondary">
+              <Link to="/careers" className="text-secondary">
                 Careers
               </Link>
             </li>
             <li>
-              <Link to="#" className="text-secondary">
+              <Link to="/contact" className="text-secondary">
                 Contact
               </Link>
             </li>
