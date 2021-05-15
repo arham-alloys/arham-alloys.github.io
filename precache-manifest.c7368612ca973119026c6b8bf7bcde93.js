@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9fa1699fa95ec88dc6753989c83b4ad",
+    "revision": "7dbeb90998d4db469b7f6268248ac394",
     "url": "/index.html"
   },
   {
-    "revision": "b1b69be2a91abcac5c4d",
+    "revision": "ed22dada83a01467e934",
     "url": "/static/css/main.f36082bf.chunk.css"
   },
   {
-    "revision": "506142f5026f94799d61",
-    "url": "/static/js/2.76c047c5.chunk.js"
+    "revision": "faed8b186b512d42779f",
+    "url": "/static/js/2.7672ec2c.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/static/js/2.76c047c5.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.7672ec2c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b1b69be2a91abcac5c4d",
-    "url": "/static/js/main.b6a30627.chunk.js"
+    "revision": "ed22dada83a01467e934",
+    "url": "/static/js/main.256d410e.chunk.js"
   },
   {
     "revision": "7fff51b3f6cffb35af8b",
@@ -78,5 +78,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b2beed8fef52742778617364b755dbcc",
     "url": "/static/media/mrai.b2beed8f.png"
+  },
+  {
+    "revision": "9f002129349e31b41dd85c743738fef9",
+    "url": "/static/media/sellyourscrap.9f002129.png"
   }
 ]);
