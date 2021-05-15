@@ -5,6 +5,7 @@ import Home from "./Containers/Home";
 import Contact from "./Containers/Contact";
 import Infrastructure from "./Containers/Infrastructure";
 import About from "./Containers/About";
+import SellYourScrap from "./Containers/SellYourScrap";
 import Careers from "./Containers/Careers";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
@@ -23,7 +24,7 @@ const Application = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/sell-your-scrap" component={About} />
+        <Route exact path="/sell-your-scrap" component={SellYourScrap} />
         <Route exact path="/infrastructure" component={Infrastructure} />
         <Route exact path="/careers" component={Careers} />
         <Route exact path="/contact" component={Contact} />

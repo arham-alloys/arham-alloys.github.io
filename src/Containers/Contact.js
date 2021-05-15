@@ -89,11 +89,11 @@ const Contact = () => {
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14045.42356975292!2d77.3020823!3d28.348088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7242671613101be7!2sArham%20Alloy%20and%20Steel!5e0!3m2!1sen!2sin!4v1620976895102!5m2!1sen!2sin"
               width="100%"
               height="500px"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              allowfullscreen=""
+              marginHeight="0"
+              marginWidth="0"
+              allowFullScreen=""
               loading="lazy"
               title="Arham Alloy and Steel"
             ></iframe>
@@ -142,7 +142,7 @@ const Contact = () => {
                   name="_replyto"
                   className="form-control"
                   placeholder="Your Email Address"
-                  required="true"
+                  required
                 />
                 <input
                   type="hidden"

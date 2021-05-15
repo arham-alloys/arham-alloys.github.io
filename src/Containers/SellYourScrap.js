@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Container, Row, Col } from "reactstrap";
-import careerImg from "../img/career.png";
+import sellyourscrapImg from "../img/sellyourscrap.png";
 import styled from "styled-components";
 import heroImg2 from "../img/hero-img-3.png";
 import pipe_yellow from "../img/scrap/pipe-yellow.png";
@@ -10,7 +10,22 @@ import pipe_red from "../img/scrap/pipe-red.png";
 import nut1_red from "../img/scrap/nut1-red.png";
 import bolt_yellow from "../img/scrap/bolt-yellow.png";
 
-const Careers = () => {
+const SellYourScrap = () => {
+  const [showTypeOthers, setShowTypeOthers] = useState(false);
+
+  const changeType = (event) => {
+    setShowTypeOthers(event.target.value === "Others");
+  };
+
+  const scrapTypeOptions = [
+    "Stainless Steel",
+    "Zinc",
+    "Aluminium",
+    "Brass",
+    "Copper",
+    "Titanium",
+    "Others",
+  ];
   return (
     <LandingSection1>
       <FloatingScrap1
@@ -53,7 +68,7 @@ const Careers = () => {
             opacity: 1,
           }}
         >
-          Careers
+          Sell Your Scrap
         </h1>
         <Row>
           <Col
@@ -69,10 +84,10 @@ const Careers = () => {
                 position: "absolute",
                 top: "0",
                 left: "-100%",
-                transform: "rotate(-90deg) translate(-37%, -18%)",
+                transform: "rotate(-90deg) translate(-42%, -153%)",
               }}
             >
-              Careers
+              Sell Your Scrap
             </h5>
           </Col>
           <Col
@@ -81,10 +96,10 @@ const Careers = () => {
             lg="6"
           >
             <h1 className="text-dark font-weight-bold mb-4 mt-3 mt-lg-0">
-              Find Your Opportunity With Us
+              Have Something For Us? Sell it Here!
             </h1>
             <form
-              action="https://mailthis.to/WorkAASPL"
+              action="https://mailthis.to/avisionx"
               method="POST"
               encType="multipart/form-data"
             >
@@ -119,7 +134,7 @@ const Careers = () => {
                   name="_replyto"
                 />
                 <small id="emailHelp" className="form-text text-muted">
-                  We'll contact you on this email for further notice.
+                  We'll contact you on this email for enquiry.
                 </small>
               </div>
               <div className="form-group">
@@ -136,63 +151,110 @@ const Careers = () => {
                   name="contact"
                 />
                 <small id="contactHelp" className="form-text text-muted">
-                  We'll contact you on this number for further notice.
+                  We'll contact you on this number for enquiry.
                 </small>
               </div>
               <div className="form-group">
-                <label htmlFor="designation">Designation</label>
-                <input
-                  type="text"
+                <label htmlFor="location">
+                  Scrap Location<span className="text-danger">*</span>
+                </label>
+                <textarea
+                  rows="3"
                   className="form-control"
-                  id="designation"
-                  aria-describedby="designationHelp"
-                  placeholder="Designation"
-                  name="designation"
+                  id="location"
+                  aria-describedby="locationHelp"
+                  placeholder="Scrap Location"
+                  name="location"
+                  required
                 />
-                <small id="designationHelp" className="form-text text-muted">
-                  Please enter any official title you may hold.
+                <small id="locationHelp" className="form-text text-muted">
+                  Please enter location address from where scrap needs to be
+                  picked.
                 </small>
               </div>
+
               <div className="form-group">
-                <label htmlFor="linkedin">LinkedIn Profile</label>
+                <label htmlFor="quantity">
+                  Quantity<span className="text-danger">*</span>
+                </label>
                 <input
                   type="text"
                   className="form-control"
-                  id="linkedin"
-                  aria-describedby="linkedinHelp"
-                  placeholder="LinkedIn Profile"
-                  name="linkedin"
+                  id="quantity"
+                  aria-describedby="quantityHelp"
+                  placeholder="Quantity"
+                  name="quantity"
+                  required
                 />
-                <small id="linkedinHelp" className="form-text text-muted">
-                  Please enter link to your LinkedIn profile.
+                <small id="quantityHelp" className="form-text text-muted">
+                  Please enter quantity of scrap. Example: 1 Ton, 100 Kg etc...
                 </small>
               </div>
-              <label>
-                Upload CV/Resume<span className="text-danger">*</span>
-              </label>
-              <input
-                type="file"
-                className="form-control-file"
-                id="resume"
-                name="file"
-                required
-                accept="application/pdf"
-              />
-              <small id="designationHelp" className="form-text text-muted">
-                Please upload your latest resume/cv in pdf format.
-              </small>
+
+              <div className="form-group">
+                <label htmlFor="type">Scrap Type</label>
+                <select
+                  className="form-control"
+                  id="type"
+                  required
+                  aria-describedby="typeHelp"
+                  name="scrapType"
+                  defaultValue=""
+                  onChange={changeType}
+                >
+                  <option value="" disabled hidden>
+                    Select Type
+                  </option>
+                  {scrapTypeOptions.map((val, i) => (
+                    <option value={val} key={i}>
+                      {val}
+                    </option>
+                  ))}
+                </select>
+                {showTypeOthers && (
+                  <div>
+                    <input
+                      type="text"
+                      className="form-control mt-2"
+                      id="scrapTypeOthers"
+                      aria-describedby="typeOthersHelp"
+                      placeholder="Describe Other Type"
+                      name="scrapTypeOthers"
+                    />
+                    <small id="typeOthersHelp" className="form-text text-muted">
+                      Please enter description of of scrap type.
+                    </small>
+                  </div>
+                )}
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="description">Description</label>
+                <textarea
+                  rows="4"
+                  className="form-control"
+                  id="description"
+                  aria-describedby="descriptionHelp"
+                  placeholder="Description"
+                  name="description"
+                />
+                <small id="descriptionHelp" className="form-text text-muted">
+                  Please enter any further details or description if needed.
+                </small>
+              </div>
+
               <input
                 type="hidden"
                 name="_subject"
-                value="Careers form submitted"
+                value="Sell your scrap form submitted"
               ></input>
               <input type="hidden" name="_honeypot" value=""></input>
               <input
                 type="hidden"
                 name="_confirmation"
-                value="We'll find best opportunity for you at Arham Alloy & Steel get in touch with you shortly!"
+                value="We have got your response at Arham Alloy & Steel get in touch with you shortly!"
               ></input>
-              <button type="submit" className="btn btn-info mt-3">
+              <button type="submit" className="btn btn-info">
                 Submit
               </button>
             </form>
@@ -202,7 +264,7 @@ const Careers = () => {
             sm="12"
             lg="3"
           >
-            <img className="img-fluid" src={careerImg} alt="" />
+            <img className="img-fluid" src={sellyourscrapImg} alt="" />
           </Col>
         </Row>
       </Container>
@@ -298,4 +360,4 @@ const FloatingScrap3 = styled.img`
   animation-timing-function: ease-in-out;
 `;
 
-export default Careers;
+export default SellYourScrap;
