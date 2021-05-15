@@ -99,7 +99,7 @@ const SellYourScrap = () => {
               Have Something For Us? Sell it Here!
             </h1>
             <form
-              action="https://mailthis.to/avisionx"
+              action="https://mailthis.to/ContacAASPL"
               method="POST"
               encType="multipart/form-data"
             >
@@ -192,7 +192,9 @@ const SellYourScrap = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="type">Scrap Type</label>
+                <label htmlFor="type">
+                  Scrap Type<span className="text-danger">*</span>
+                </label>
                 <select
                   className="form-control"
                   id="type"
@@ -220,6 +222,7 @@ const SellYourScrap = () => {
                       aria-describedby="typeOthersHelp"
                       placeholder="Describe Other Type"
                       name="scrapTypeOthers"
+                      required
                     />
                     <small id="typeOthersHelp" className="form-text text-muted">
                       Please enter description of of scrap type.

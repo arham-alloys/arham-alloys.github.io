@@ -79,7 +79,7 @@ const Infrastructure = () => {
             </h5>
           </Col>
           <Col
-            className="d-flex flex-column order-3 order-lg-2 pr-0 pr-lg-5"
+            className="d-flex flex-column order-3 order-lg-2 pr-3 pr-lg-5"
             sm="12"
             lg="9"
           >
@@ -91,16 +91,16 @@ const Infrastructure = () => {
             </p>
             <Row>
               <Col sm="12" lg="6">
-                <img className="img-fluid" alt="" src={infra1} />
+                <img className="img-fluid w-100" alt="" src={infra1} />
               </Col>
               <Col sm="12" lg="6" className="mt-4 pt-3 mt-lg-0 pt-lg-0">
-                <img className="img-fluid" alt="" src={infra2} />
+                <img className="img-fluid w-100" alt="" src={infra2} />
               </Col>
               <Col sm="12" lg="6" className="mt-4 pt-3">
-                <img className="img-fluid" alt="" src={infra3} />
+                <img className="img-fluid w-100" alt="" src={infra3} />
               </Col>
               <Col sm="12" lg="6" className="mt-4 pt-3">
-                <img className="img-fluid" alt="" src={infra4} />
+                <img className="img-fluid w-100" alt="" src={infra4} />
               </Col>
             </Row>
           </Col>
