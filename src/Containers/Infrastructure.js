@@ -1,7 +1,10 @@
 import React from "react";
 
 import { Container, Row, Col } from "reactstrap";
-import aboutImg from "../img/about.png";
+import infra1 from "../img/infra/infra_1.jpg";
+import infra2 from "../img/infra/infra_2.jpg";
+import infra3 from "../img/infra/infra_3.jpg";
+import infra4 from "../img/infra/infra_4.jpg";
 import styled from "styled-components";
 import heroImg2 from "../img/hero-img-3.png";
 import pipe_yellow from "../img/scrap/pipe-yellow.png";
@@ -75,32 +78,37 @@ const Infrastructure = () => {
               Infrastructure
             </h5>
           </Col>
-          <Col className="d-flex flex-column order-3 order-lg-2" sm="12" lg="5">
-            <h1 className="text-dark font-weight-bold mb-4 mt-3 mt-lg-0">
+          <Col
+            className="d-flex flex-column order-3 order-lg-2 pr-0 pr-lg-5"
+            sm="12"
+            lg="9"
+          >
+            <h1 className="text-dark font-weight-bold mb-0 mt-3 mt-lg-0">
               We Are A State-of-The-Art Processing House
             </h1>
-            <div className="flex-grow-1 align-items-center justify-content-center d-flex">
-              <p className="text-info h4">Page Under Construction!</p>
-            </div>
-          </Col>
-          <Col
-            className="text-center mt-4 mt-lg-0 d-flex justify-content-end order-1 order-lg-3"
-            sm="12"
-            lg="4"
-          >
-            <AboutImg src={aboutImg} alt="" />
+            <p className="text-dark mb-4">
+              Page is under construction! Here are some photos of our facility.
+            </p>
+            <Row>
+              <Col sm="12" lg="6">
+                <img className="img-fluid" alt="" src={infra1} />
+              </Col>
+              <Col sm="12" lg="6" className="mt-4 pt-3 mt-lg-0 pt-lg-0">
+                <img className="img-fluid" alt="" src={infra2} />
+              </Col>
+              <Col sm="12" lg="6" className="mt-4 pt-3">
+                <img className="img-fluid" alt="" src={infra3} />
+              </Col>
+              <Col sm="12" lg="6" className="mt-4 pt-3">
+                <img className="img-fluid" alt="" src={infra4} />
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>
     </LandingSection1>
   );
 };
-
-const AboutImg = styled.img`
-  @media (max-width: 991.98px) {
-    width: 100%;
-  }
-`;
 
 const LandingSection1 = styled.div`
   background-image: url(${heroImg2});
