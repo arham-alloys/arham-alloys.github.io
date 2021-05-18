@@ -87,7 +87,7 @@ const About = () => {
               Arham Alloy & Steel Pvt Ltd. is the brainchild of true steel
               industry disruptors who have worked tirelessly to make a revered
               name in the steel scrap trading. Running under the banner of Paras
-              metal agency for decades it was rebranded as Arham Alloy & Steel
+              Metal Agency for decades it was rebranded as Arham Alloy & Steel
               Pvt Ltd. Founded in 2007, under the guidance of Mr. Abhay Jain,
               Atul Jain & Amit Jain, Arham Alloy & Steel Pvt Ltd. has made a
               name for itself in the list of top suppliers of non-ferrous scrap

@@ -14,7 +14,7 @@ const Footer = () => {
       <hr className="mb-4" />
       <Row className="text-secondary pt-3">
         <Col sm="12" lg="3">
-          <Link to="/">
+          <Link to="/" replace>
             <img height="40px" src={logo} alt="" />
           </Link>
           <p className="mb-0 mt-3 text-secondary small">
@@ -62,34 +62,44 @@ const Footer = () => {
           </h5>
           <ListGroup className="no-list">
             <li>
-              <Link to="/" className="text-secondary">
+              <Link to="/" className="text-secondary" replace>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className="text-secondary">
+              <Link to="/about" className="text-secondary" replace>
                 About
               </Link>
             </li>
             <li>
-              <Link to="/sell-your-scrap" className="text-secondary">
+              <Link to="/sell-your-scrap" className="text-secondary" replace>
                 Sell Your Scrap
               </Link>
             </li>
             <li>
-              <Link to="/infrastructure" className="text-secondary">
+              <Link to="/infrastructure" className="text-secondary" replace>
                 Infrastructure
               </Link>
             </li>
             <li>
-              <Link to="/careers" className="text-secondary">
+              <Link to="/careers" className="text-secondary" replace>
                 Careers
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="text-secondary">
+              <Link to="/contact" className="text-secondary" replace>
                 Contact
               </Link>
+            </li>
+            <li>
+              <a
+                className="text-secondary"
+                href="https://www.linkedin.com/company/aaspl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
             </li>
           </ListGroup>
         </Col>

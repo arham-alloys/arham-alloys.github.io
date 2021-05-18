@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Container, Row, Col } from "reactstrap";
-import infra1 from "../img/infra/infra_1.jpg";
-import infra2 from "../img/infra/infra_2.jpg";
+// import infra1 from "../img/infra/infra_1.jpg";
+// import infra2 from "../img/infra/infra_2.jpg";
 import infra3 from "../img/infra/infra_3.jpg";
 import infra4 from "../img/infra/infra_4.jpg";
 import styled from "styled-components";
@@ -91,15 +91,9 @@ const Infrastructure = () => {
             </p>
             <Row>
               <Col sm="12" lg="6">
-                <img className="img-fluid w-100" alt="" src={infra1} />
-              </Col>
-              <Col sm="12" lg="6" className="mt-4 pt-3 mt-lg-0 pt-lg-0">
-                <img className="img-fluid w-100" alt="" src={infra2} />
-              </Col>
-              <Col sm="12" lg="6" className="mt-4 pt-3">
                 <img className="img-fluid w-100" alt="" src={infra3} />
               </Col>
-              <Col sm="12" lg="6" className="mt-4 pt-3">
+              <Col sm="12" lg="6" className="mt-4 pt-3 mt-lg-0 pt-lg-0">
                 <img className="img-fluid w-100" alt="" src={infra4} />
               </Col>
             </Row>

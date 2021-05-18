@@ -150,7 +150,8 @@ const Careers = () => {
                   name="designation"
                 />
                 <small id="designationHelp" className="form-text text-muted">
-                  Please enter any official title you may hold.
+                  Please enter the designation you think you are best suited
+                  for.
                 </small>
               </div>
               <div className="form-group">

@@ -134,7 +134,7 @@ const SellYourScrap = () => {
                   name="_replyto"
                 />
                 <small id="emailHelp" className="form-text text-muted">
-                  We'll contact you on this email for enquiry.
+                  This will be used for correspondence.
                 </small>
               </div>
               <div className="form-group">
@@ -151,7 +151,7 @@ const SellYourScrap = () => {
                   name="contact"
                 />
                 <small id="contactHelp" className="form-text text-muted">
-                  We'll contact you on this number for enquiry.
+                  This will be used for correspondence.
                 </small>
               </div>
               <div className="form-group">

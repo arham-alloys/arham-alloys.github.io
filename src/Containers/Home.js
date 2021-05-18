@@ -37,6 +37,7 @@ const Home = () => {
       head: "Sell Scrap!",
       icon: mdiTruckCheck,
       text: "Another Product Restarts its Lifecycle",
+      href: "/sell-your-scrap",
     },
   ];
 
@@ -180,7 +181,7 @@ const Home = () => {
                 house situated at our newly built facility at Faridabad.
               </p>
               <Row className="pl-3">
-                <Link to="/sell-your-scrap">
+                <Link to="/sell-your-scrap" replace>
                   <Button
                     className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
                     size="lg"
@@ -276,7 +277,7 @@ const Home = () => {
               Needless to say, it fetches very high value and we'll make sure to
               get you that value.
             </p>
-            <Link to="/sell-your-scrap" className="mt-auto mb-3">
+            <Link to="/sell-your-scrap" className="mt-auto mb-3" replace>
               <Button
                 className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
                 size="lg"
@@ -379,6 +380,7 @@ const Home = () => {
                 to="/infrastructure"
                 className="mt-auto mb-3 text-white text-uppercase small d-flex"
                 style={{ letterSpacing: "1px" }}
+                replace
               >
                 Our Infrastructure{" "}
                 <Icon path={mdiArrowRight} className="ml-2" size={0.8} />
@@ -419,7 +421,7 @@ const Home = () => {
                 />
               </div>
             ))} */}
-            <Link to="/about" className="mt-4 mb-3">
+            <Link to="/about" className="mt-4 mb-3" replace>
               <Button
                 className="col col-lg-auto px-lg-5 py-3 small bg-gradient-primary border-0 rounded text-uppercase font-weight-light"
                 size="lg"

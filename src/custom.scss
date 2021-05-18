@@ -15,6 +15,10 @@ $btn-focus-box-shadow: none !important;
   transition-duration: 300ms;
 }
 
+.pointer {
+  cursor: pointer
+}
+
 ::selection {
   background-color: #D2E8C4;
 }
