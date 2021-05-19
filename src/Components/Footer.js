@@ -7,6 +7,8 @@ import partner2_color from "../img/partners/bir-color.svg";
 import partner3 from "../img/partners/mrai.png";
 import partner3_color from "../img/partners/mrai-color.png";
 import AssociateImg from "./AssociateImg";
+import { mdiLinkedin } from "@mdi/js";
+import Icon from "@mdi/react";
 
 const Footer = () => {
   return (
@@ -23,6 +25,15 @@ const Footer = () => {
             trading. Running under the banner of Paras Metal Agency for decades
             it was rebranded as Arham Alloy & Steel Pvt Ltd.
           </p>
+          <a
+            className="text-secondary"
+            href="https://www.linkedin.com/company/aaspl"
+            target="_blank"
+            style={{ marginLeft: "-2px" }}
+            rel="noopener noreferrer"
+          >
+            <Icon path={mdiLinkedin} size={1} />
+          </a>
         </Col>
         <Col sm="12" lg="4">
           <h5 className="text-dark font-weight-bold mb-1 mt-2 mt-lg-0">
@@ -90,16 +101,6 @@ const Footer = () => {
               <Link to="/contact" className="text-secondary" replace>
                 Contact
               </Link>
-            </li>
-            <li>
-              <a
-                className="text-secondary"
-                href="https://www.linkedin.com/company/aaspl"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
             </li>
           </ListGroup>
         </Col>

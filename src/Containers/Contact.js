@@ -9,12 +9,35 @@ import pipe_red from "../img/scrap/pipe-red.png";
 import nut1_red from "../img/scrap/nut1-red.png";
 import bolt_yellow from "../img/scrap/bolt-yellow.png";
 import Icon from "@mdi/react";
-import { mdiCardAccountPhoneOutline, mdiMapMarkerRadiusOutline } from "@mdi/js";
+import {
+  mdiCardAccountPhoneOutline,
+  mdiLinkedin,
+  mdiMapMarkerRadiusOutline,
+} from "@mdi/js";
 import { Button } from "reactstrap";
 
 const Contact = () => {
   return (
     <LandingSection1>
+      <div
+        className="bg-info p-1 d-flex align-items-center justify-content-center"
+        style={{
+          top: "15vh",
+          right: "0",
+          position: "fixed",
+          zIndex: 99,
+          borderRadius: "0.5rem 0 0 0.5rem",
+        }}
+      >
+        <a
+          className="text-secondary"
+          href="https://www.linkedin.com/company/aaspl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon path={mdiLinkedin} color="white" size={1.2} />
+        </a>
+      </div>
       <FloatingScrap1
         src={pipe_yellow}
         height="70px"
@@ -101,7 +124,7 @@ const Contact = () => {
         </Row>
         <Container className="mt-4">
           <Row>
-            <div className="my-4 d-flex align-items-center col-6 col-lg-auto">
+            <div className="my-4 d-flex align-items-center col-12 col-lg-auto">
               <Icon
                 path={mdiCardAccountPhoneOutline}
                 size={1.5}
@@ -113,7 +136,7 @@ const Contact = () => {
                 </a>
               </p>
             </div>
-            <div className="my-2 my-lg-4 d-flex align-items-center col-6 col-lg-auto">
+            <div className="my-2 my-lg-4 d-flex align-items-center col-12 col-lg-auto">
               <Icon
                 path={mdiMapMarkerRadiusOutline}
                 size={1.5}

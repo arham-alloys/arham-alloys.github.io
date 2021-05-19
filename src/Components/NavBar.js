@@ -28,7 +28,6 @@ const NavBar = () => {
   }, []);
 
   useEffect(() => {
-    console.log(location);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location]);
 
