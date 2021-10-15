@@ -49,7 +49,7 @@ const Home = () => {
     },
     {
       head: "Tons of Scrap Sorted",
-      count: 15,
+      count: 150,
       counthelp: "k",
       text: "With tonnes of scrap to sort we need hundreds of hands on the table to sort it out.",
     },
