@@ -44,8 +44,8 @@ const Home = () => {
   const ChooseData = [
     {
       head: "Years of Experience",
-      count: 25,
-      text: "With over 25 years of experience in the industry, we have a well established clientele who are also market leaders in recycling industry.",
+      count: 30,
+      text: "With over 30 years of experience in the industry, we have a well established clientele who are also market leaders in recycling industry.",
     },
     {
       head: "Tons of Scrap Sorted",
