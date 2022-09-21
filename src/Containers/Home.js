@@ -130,13 +130,14 @@ const Home = () => {
                     interval={2500}
                     children={[
                       "Non-Ferrous",
-                      "Aluminium",
+                      "Zink",
+                      "Zurik",
+                      "Heavies",
                       "Stainless Steel",
+                      "Aluminium",
                       "Copper",
-                      "Tungsten",
-                      "Nickel Alloys",
-                      "Titanium",
-                      "Nickel",
+                      "Brass",
+                      ,                
                     ]}
                   />
                 </h1>
