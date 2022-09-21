@@ -44,18 +44,18 @@ const Home = () => {
   const ChooseData = [
     {
       head: "Years of Experience",
-      count: 30,
+      count: 33,
       text: "With over 30 years of experience in the industry, we have a well established clientele who are also market leaders in recycling industry.",
     },
     {
       head: "Tons of Scrap Sorted",
-      count: 150,
+      count: 200,
       counthelp: "k",
       text: "With tonnes of scrap to sort we need hundreds of hands on the table to sort it out.",
     },
     {
       head: "Sq. Feet of Processing Area",
-      count: 70,
+      count: 100,
       counthelp: "k",
       text: "Such workforce requires thousands of square feet of area to operate, store and make way for consignments.",
     },
