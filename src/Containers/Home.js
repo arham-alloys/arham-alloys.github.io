@@ -130,7 +130,6 @@ const Home = () => {
                     interval={2500}
                     children={[
                       "Non-Ferrous",
-                      "Zink",
                       "Zurik",
                       "Heavies",
                       "Stainless Steel",
